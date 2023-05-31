@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+package example;
+
+option java_package = "com.afalenkin.protobufmodel.dto";
+option java_outer_classname = "PersonHolder";
+option java_multiple_files = true;
+
+enum Gender {
+  MALE = 0;
+  FEMALE = 1;
+  TRAP = 2;
+  UNDEFINED = 4;
+}
+
+message Person {
+  string firstName = 1;
+  string lastName = 2;
+  int32 age = 3;
+  Gender gender = 4;
+  double weight = 5;
+  repeated Document documents = 6;
+  repeated Person childs = 7;
+  map<string, Pet> pets = 8;
+
+}
+
+message Document {
+  uint32 serial = 1;
+  uint32 number = 2;
+  bool main = 3;
+}
+
+message Pet {
+  string name = 1;
+  uint32 age = 2;
+  Type type = 3;
+
+  enum Type {
+    DOG = 0;
+    CAT = 1;
+    GOAT = 2;
+  }
+}
