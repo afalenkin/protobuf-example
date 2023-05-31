@@ -1,4 +1,4 @@
-package com.afalenkin.protobufmodel;
+package com.afalenkin.protobufsender;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
