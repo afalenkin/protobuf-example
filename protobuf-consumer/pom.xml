@@ -9,7 +9,6 @@
         <groupId>com.afalenkin</groupId>
         <version>0.0.1</version>
     </parent>
-    <groupId>com.afalenkin</groupId>
     <artifactId>protobuf-consumer</artifactId>
     <version>0.0.1</version>
 
@@ -18,5 +17,13 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.afalenkin</groupId>
+            <artifactId>protobuf-model</artifactId>
+            <version>${protobuf-model.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
