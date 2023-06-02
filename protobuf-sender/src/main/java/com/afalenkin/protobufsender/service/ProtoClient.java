@@ -28,6 +28,7 @@ public class ProtoClient {
 
 
     public Optional<Person> get(Long id) {
-        return Optional.ofNullable(restTemplate.getForEntity(consumerUrl, Person.class, Map.of("id", id)).getBody());
+        String url = consumerUrl + "/" + id;
+        return Optional.ofNullable(restTemplate.getForEntity(url, Person.class).getBody());
     }
 }
