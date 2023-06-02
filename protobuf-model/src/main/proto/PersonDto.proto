@@ -14,15 +14,15 @@ enum Gender {
 }
 
 message Person {
-  string firstName = 1;
-  string lastName = 2;
-  int32 age = 3;
-  Gender gender = 4;
-  double weight = 5;
-  repeated Document documents = 6;
-  repeated Person childs = 7;
-  map<string, Pet> pets = 8;
-
+  int64 id = 1;
+  string firstName = 2;
+  string lastName = 3;
+  int32 age = 4;
+  Gender gender = 5;
+  double weight = 6;
+  repeated Document documents = 7;
+  repeated Person childs = 8;
+  map<string, Pet> pets = 9;
 }
 
 message Document {

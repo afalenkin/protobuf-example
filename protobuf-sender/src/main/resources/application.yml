@@ -1,2 +1,5 @@
 server:
   port: 8081
+
+consumer:
+  url: http://localhost:8082/proto
